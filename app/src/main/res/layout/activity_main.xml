@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.gowth.interactivestories.ui.MainActivity"
+    android:background="@android:color/background_light">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/main_title"
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:adjustViewBounds="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="Signals to mars"/>
+
+    <Button
+        android:text="START YOUR ADVENTURE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/background_light"
+        android:textColor="@android:color/holo_blue_bright" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/nameedittext"
+        android:hint="Enter your name"
+        android:maxLength="30" />
+
+</RelativeLayout>
